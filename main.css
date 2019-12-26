@@ -1,0 +1,93 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    min-height: 100vh;
+    background-image: url('./background/backgroundMountains.jpg');
+    background-size: cover;
+    background-repeat: no-repeat ;
+    background-position: center center;
+    background-attachment: fixed;
+
+}
+
+.container {
+    height: auto;   
+    width: 600px;
+    max-width: 80%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px;
+}
+
+.header {
+    padding: 10px 0px 0px 0px;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+    font-size: 24px;
+}
+
+form {
+    font-family: 'Source Code Pro', monospace;
+    display: grid;
+    grid-template-columns: repeat(1,auto);
+    gap: 10px;
+    padding: 20px;
+}
+
+.age-label {
+    width: 100%;
+}
+
+label {
+    font-size: 16px;
+    width: 80%;
+}
+
+::placeholder { 
+    font-size: 12px;
+}
+
+input {
+    border: none;
+    background: transparent;
+    padding: 10px;
+    border-bottom: 1px solid lightgray;
+}
+
+.radio-span {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+
+.checkbox-span {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+
+#other-textfield {
+    width: 50%;
+}
+
+#submit-btn {
+    width: 100px;
+    margin: 0 auto;
+    background-color: #e7e7e7; 
+    font-family: 'Source Code Pro', monospace;
+    border: none;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 25px;
+}

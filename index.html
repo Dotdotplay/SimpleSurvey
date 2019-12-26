@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Form Survery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script defer src="script.js"></script>
+    
+</head>
+<body>
+   <div class="container">
+        <div class="content-box">
+            <div class="header"> 
+                Survey Form
+            </div>
+                <form action="/" method="GET" id="form">
+                    <!-- Form Contents -->
+
+                    <!-- Name -->
+                    <label for="Name"> Name </label>
+                    <div>
+                        <input type="Name" name="name" type="text" id="firstName" placeholder="First Name " required>
+                        <input type="Name" name="name" type="text" id="lastName" placeholder="Last Name " required>
+                    </div>
+                
+                    <!-- Email -->
+                    <label for="Email"> Email </label>
+                    <div>
+                        <input type="Email" name="Email" type="text" id="Email" placeholder="Eg: Example@email.com" required>
+                    </div>
+
+                    <!--Zipcode-->
+                    <label for="ZipCode"> Zipcode </label>
+                    <div>
+                        <!--Regex Pattern used for checking the Zip Code ^\d{5}$ <- Must be at least 5 digit number -->
+                        <input type="text" name="ZipCode"  id="ZipCode" pattern="^\d{5}$" placeholder="Eg: 11223" required>
+                    </div>
+
+                    <!-- Age -->
+                    <label for="Age"> Are you over the age of 18? </label>
+                        <span class="radio-span"><input type="radio" id="AgeOver18" name="Age" value="Yes"  required> Yes </span>
+                        <span class="radio-span"><input type="radio" id="Under18" name="Age" value="No"> No </span>
+
+                    <!-- Gender -->
+                    <label for="Gender"> Gender </label>
+                        <span class ="radio-span"><input type="radio" name="Gender" value="male"  required> Male</span>
+                        <span class ="radio-span"><input type="radio" name="Gender" value="female" > Female</span>
+
+                    <!-- Ethnicity -->
+                    <label for="Ethnicity">What is your race or ethnicity? (Select all that apply)</label>
+                        <span class="checkbox-span"><input type="checkbox" name="Ethnicity" value="White" >Caucasian</span>
+                        <span class="checkbox-span"><input type="checkbox" name="Ethnicity" value="Hispanic, Latino, or Spanish" >Hispanic, Latino, or Spanish</span>
+                        <span class="checkbox-span"><input type="checkbox" name="Ethnicity" value="Black or African American">Black or African American</span>
+                        <span class="checkbox-span"><input type="checkbox" name="Ethnicity" value="American Indian or Alaska Native">American Indian or Alaskan Native</span>
+                        <span class="checkbox-span"><input type="checkbox" name="Ethnicity" value="Middle Eastern or North African">Middle Eastern or North African</span>
+                        <span class="checkbox-span"><input type="checkbox" name="Ethnicity" value="White">Asian</span>
+                        <span class="checkbox-span"><input type="checkbox" name="Ethnicity" value="Some other race or ethnicity?(please specify)">Other (please specify below)</span>
+
+                    <input type="text" id="other-textfield" name="Ethnicity"  placeholder="Other">
+
+                    <!-- Submit Button -->
+                    <button id="submit-btn" class="submit-btn" type="submit"> Submit </button>
+                
+                </form>
+        </div>
+    </div>
+</body>
+</html>
